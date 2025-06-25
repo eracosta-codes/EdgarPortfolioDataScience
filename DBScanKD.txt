@@ -1,0 +1,7 @@
+A version of DBScan by Edgar Acosta
+
+3 different CSVs with XYZ coordinates obtained from LiDAR are put under the DBScanKD algorithm developed in C++.
+
+to run the DBScan, in the terminal type /DBScanKD Point_Cloud_1.csv 0.8 5, where argv[1] is the filename, argv[2] is the eps(distance between points), and argv[3] which are the minimum amount of points in a cluster(minPts)
+a new CSV file will be generated and in view_clusters.py, edit df_Raw_Point_Cloud = pd.read_csv("Your_File.csv", skiprows=2, header=None) where in "Your_File.csv" you put in the name of the file that was generated
+"Point_Cloud_1.1_clusters.csv" is placed in my default so if you want to skip all the processes above, simply run view_clusters.py to see one of the final results. Make sure to pip install open3d first.
